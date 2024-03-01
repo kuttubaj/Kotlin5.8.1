@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.NewsFragment"
+    android:orientation="vertical">
+
+   <EditText
+       android:id="@+id/et_news_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="75dp"
+       android:hint="Searh"
+       android:textSize="30dp"
+       android:layout_margin="15dp"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rv_news_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:listitem="@layout/news_item"/>
+
+
+</LinearLayout>
